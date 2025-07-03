@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index.html</title>
+</head>
+<body>
+    <input type = "text" id = "uname" placeholder="Enter your name here...">
+    <button onclick = "nextPage()">Login</button>
+    <script>
+        function nextPage(){
+            let uname=document.getElementById("uname").value;
+            sessionStorage.setItem("username",uname);
+            window.location.href="Dashboard.html";
+
+        }
+    </script>
+
+    
+</body>
+</html>
